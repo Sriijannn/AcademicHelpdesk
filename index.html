@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-lg">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="Logo" width="me-auto" height="50" class="d-inline-block align-text-top">
+         </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Timetable</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Analysis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Application</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">References</a></li>
+                  <li><a class="dropdown-item" href="#">Copyrights</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+     <div class="container py-5 services">
+        <h1 class="text-center">Services</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4 py-5">
+
+            <div class="col">
+                <div class="card">
+                    <img src="timetable.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TIMETABLE</h5>
+                        <p class="card-text">A timetable generator automates schedule creation for efficient time management in academic or activities, enhancing productivity.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>Free</h3>
+                        <button class="btn btn-primary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="reportcard.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">REPORT CARD</h5>
+                        <p class="card-text">A report card generator automates the creation of academic performance summaries for students and institutions.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>Free</h3>
+                        <button class="btn btn-primary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="analysis.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">RESULT ANALYSIS</h5>
+                        <p class="card-text">Tool providing insights on data, aiding decision-making, and optimizing performance with analytics.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>Free</h3>
+                        <button class="btn btn-primary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="application.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">APPLICATION</h5>
+                        <p class="card-text">Apply for leave hassle-free: Submit requests conveniently through our user-friendly website interface.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>Free</h3>
+                        <button class="btn btn-primary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome Back !</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-success">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
